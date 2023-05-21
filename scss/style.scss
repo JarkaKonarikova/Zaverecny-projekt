@@ -1,0 +1,351 @@
+$blue: #009FE3;
+$lightblue: #E9FAFF;
+$black: #1D1D1B;
+$font: 'Roboto', sans-serif;
+$spacer: 20px;
+
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+h1, h2, h3, p, a {
+    font-family: $font;
+    line-height: 1,5;
+}
+
+h1 {
+    font-size: 500;
+    color: $blue;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 500;
+    color: $black;
+    font-size: 24px;
+}
+
+p {
+    font-size: 300;
+    color: $black;
+    font-size: 16px;
+}
+
+
+
+/* HEADER */
+
+.hlavicka {
+    margin: 0 auto;
+    padding: 0 $spacer;
+
+    .logo {
+        width: 100%;
+
+        img {
+            max-width: 300px;
+        }
+    }
+
+    .menu__checkbox {
+        position: absolute;
+        left: -9999px;
+    }
+
+    .menu__list {
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu__link {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 799px) {
+        .menu__checkbox:checked ~ .menu__list {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 800px) {
+        .menu__toggler {
+            display: none;
+        }
+
+        .menu__list {
+            display: flex;
+        }
+
+        .menu__item {
+            border-bottom: 0;
+        }
+
+        .hlavicka {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 300px;
+        }
+    }
+}
+
+  
+/* MAIN */
+
+.hero {
+    margin: 0 auto;
+    display: block;
+	background-color: #E9FAFF;
+    padding-bottom: $spacer;
+
+    .heropicture {
+	    object-fit: cover;
+	    object-position: center;
+	    height: 100%;
+    }
+
+    .onecolumn {
+	text-align: center;
+	max-width: 900px;
+    margin: auto;
+    padding: $spacer*2;
+    }
+
+    .headline {
+	display: flex;
+   
+        h1 {
+        margin: auto;
+        }
+    }
+
+    .kapky_vlevo, .kapky_vpravo {
+	max-width: 70px;
+    }
+}
+
+body {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.aktualne {
+    display: block;
+}
+
+.levy,
+.pravy {
+    flex: none;
+    width: auto;
+    margin: 0;
+    padding: $spacer*2;
+}
+
+.aktualneimg {
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .aktualne {
+        display: flex;
+    }
+
+    .levy,
+    .pravy {
+        flex: 0 0 50%;
+        margin: 0 auto;
+        padding: $spacer*3;
+    }
+
+    .aktualneimg {
+        width: 400px;
+    }
+}
+
+
+.button {
+    color: $blue;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    text-decoration: none;
+    border: $blue 1px solid;
+    border-radius: 5px;
+    padding: $spacer/6 $spacer;
+    margin: $spacer 0;
+}
+
+.button a:hover,
+.button a:focus 
+.button a:active {
+    font-weight: 700;
+
+}
+.vlnka {
+	max-width: 200px;
+	margin: auto;
+}
+
+.povodne {
+    display: block;
+}
+
+.levy,
+.pravy {
+    flex: none;
+    width: auto;
+    margin: 0;
+    padding: $spacer*2;
+}
+
+.foto_2002 {
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .povodne {
+        display: flex;
+    
+        .levy {
+            flex: 0 0 50%;
+            margin: 0 auto;
+            padding: $spacer*3;
+    
+            .foto_2002 {
+                width: 600px;
+            }  
+        }
+        
+        .pravy {
+            flex: 0 0 50%;
+             margin: 0 auto;
+             padding: $spacer*3;
+        }
+    }
+}
+
+.protipovodnovky {
+    display: block;
+
+.levy,
+.pravy {
+    flex: none;
+    width: auto;
+    margin: 0;
+    padding: $spacer*2;
+}
+
+.foto_2013 {
+    width: 100%;
+}
+}
+
+@media screen and (min-width: 800px) {
+
+.protipovodnovky {
+	display: flex;
+
+    .levy {
+        flex: 0 0 50%;
+        margin: 0 auto;
+        padding: $spacer*3; 
+    }
+    
+    .pravy {
+        flex: 0 0 50%;
+         margin: 0 auto;
+         padding: $spacer*3;
+
+         .foto_2013 {
+            width: 600px;
+        } 
+    }
+}
+}
+
+/* PATIČKA */
+.paticka {
+	background-image: url(/images/paticka_1100x417.png);
+	padding: 30px 0;
+	text-align: center;
+	margin: 0 auto;
+
+    .textpaticka {
+        color: white;
+        padding-top: 30px;
+    }
+}
+
+/* POVODNĚ */
+
+.povodne2013,
+.povodne2002 {
+    padding: $spacer*3;
+}
+
+.gallery__grid {
+    display: block;
+    gap: 1px;
+}
+
+.gallery__item {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: $spacer;
+}
+
+.gallery__item:nth-child(5n+2) {
+    grid-column: unset;
+    grid-row: unset;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .gallery__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 300px;
+    }
+
+    .gallery__item:nth-child(5n+2) {
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+  /* PROTIPOVODŇOVKY PAGE */
+  .protipovodnova {
+    padding: $spacer*3;
+  }
+
+ /* KONTAKT */
+
+ .kontakt {
+    padding: $spacer*3;
+
+    a {
+        color: $blue;
+    }
+ }
+  
+ /* CLANKY AKTUALNE */
+
+ .article {
+   padding: $spacer;
+
+    a {
+        text-decoration: none;
+        color: $blue;
+    }
+}

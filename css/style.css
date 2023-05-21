@@ -1,0 +1,208 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, p, a {
+  font-family: "Roboto", sans-serif;
+  line-height: 1, 5;
+}
+
+h1 {
+  font-size: 500;
+  color: #009FE3;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 500;
+  color: #1D1D1B;
+  font-size: 24px;
+}
+
+p {
+  font-size: 300;
+  color: #1D1D1B;
+  font-size: 16px;
+}
+
+body {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ÚVOD */
+.hlavicka {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.hlavicka .logo {
+  width: 300px;
+}
+.hlavicka .menu a {
+  display: flex;
+  text-align: right;
+  padding: 25px 20px;
+  list-style: none;
+  text-decoration: none;
+  color: #009FE3;
+  font-size: 20px;
+}
+.hlavicka .menu li {
+  display: inline-block;
+}
+.hlavicka .menu a:hover,
+.hlavicka .menu a:focus .menu a:active {
+  font-weight: 700;
+}
+
+.hero {
+  margin: 0 auto;
+  display: block;
+  background-color: #E9FAFF;
+  padding-bottom: 20px;
+}
+.hero .heropicture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
+}
+.hero .onecolumn {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+}
+.hero .headline {
+  display: flex;
+}
+.hero .headline h1 {
+  margin: auto;
+}
+.hero .kapky_vlevo, .hero .kapky_vpravo {
+  max-width: 70px;
+}
+
+.aktualne {
+  display: flex;
+}
+.aktualne .levy {
+  flex: 0 0 50%;
+  margin: 0 auto;
+  padding: 60px;
+}
+.aktualne .pravy {
+  flex: 0 0 50%;
+  margin: 0 auto;
+  padding: 40px 60px;
+}
+.aktualne .pravy .aktualneimg {
+  width: 400px;
+}
+
+.button {
+  color: #009FE3;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  text-decoration: none;
+  border: #009FE3 1px solid;
+  border-radius: 5px;
+  padding: 3.3333333333px 20px;
+  margin: 20px 0;
+}
+
+.button a:hover,
+.button a:focus .button a:active {
+  font-weight: 700;
+}
+
+.vlnka {
+  max-width: 200px;
+  margin: auto;
+}
+
+.povodne {
+  display: flex;
+}
+.povodne .levy {
+  flex: 0 0 50%;
+  margin: 0 auto;
+  padding: 60px;
+}
+.povodne .levy .foto_2002 {
+  width: 600px;
+}
+.povodne .pravy {
+  flex: 0 0 50%;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.protipovodnovky {
+  display: flex;
+}
+.protipovodnovky .levy {
+  flex: 0 0 50%;
+  margin: 0 auto;
+  padding: 60px;
+}
+.protipovodnovky .pravy {
+  flex: 0 0 50%;
+  margin: 0 auto;
+  padding: 60px;
+}
+.protipovodnovky .pravy .foto_2013 {
+  width: 600px;
+}
+
+.paticka {
+  background-image: url(/images/paticka_1100x417.png);
+  padding: 30px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.paticka .textpaticka {
+  color: white;
+  padding-top: 30px;
+}
+
+/* POVODNĚ */
+.povodne2013, .povodne2002 {
+  padding: 60px;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 1px;
+}
+
+.gallery__item {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__item:nth-child(5n+2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* KONTAKT */
+.kontakt {
+  padding: 60px;
+}
+.kontakt a {
+  color: #009FE3;
+}/*# sourceMappingURL=style.css.map */

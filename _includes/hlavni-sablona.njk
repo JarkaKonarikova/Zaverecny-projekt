@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Hlavička -->
+	<header class="hlavicka">
+		<img class="logo" src="/images/vodypokrk_logo_širka-08.svg" alt="logo Vody po krk">
+
+	<nav class="menu">
+
+        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="menu__toggler">☰</label>
+
+		<ul class="menu__item">
+             <li class=menu__item><a class="menu__link" href="/">Úvod</a></li>
+			<li class=menu__item><a class="menu__link" href="/aktualne">Aktuálně</a></li>
+			<li class=menu__item><a class="menu__link" href="/povodne">Povodně</a></li>
+			<li class=menu__item><a class="menu__link" href="/protipovodnovky">Protipovodňovky</a></li>
+			<li class=menu__item><a class="menu__link" href="/kontakt">Kontakt</a></li>
+		</ul>
+	</header>
+  
+<!-- Main -->
+<main class="main">
+
+{{ content | safe }}
+
+</main>
+
+<!-- Patička -->
+<footer class="paticka">
+    <p class="textpaticka">©2023, Jarka Koňaříková. Informační web spolku Šárecké údolí.</p>
+</footer>
+
+</body>
+
+</html>

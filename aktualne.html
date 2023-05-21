@@ -1,0 +1,19 @@
+---
+layout: hlavni-sablona.njk
+title: Vody po krk
+---
+
+<section class="clanek">
+<h1>Aktuálně</h1>
+
+{% for prispevek in collections.aktualne | reverse %}
+
+<h2>{{ prispevek.data.title }}</h2>
+<p>{{ prispevek.data.date }}</p>
+<p>{{ prispevek.data.perex }}</p>
+<p><a href="{{ prispevek.url }}">celý článek</a></p>
+
+
+{% endfor %}
+
+</section>
