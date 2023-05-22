@@ -30,38 +30,66 @@ p {
   font-size: 16px;
 }
 
-body {
-  max-width: 1400px;
-  margin: auto;
-}
-
-/* ÚVOD */
+/* HEADER */
 .hlavicka {
-  display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   padding: 0 20px;
 }
 .hlavicka .logo {
-  width: 300px;
+  max-width: 300px;
 }
-.hlavicka .menu a {
-  display: flex;
-  text-align: right;
-  padding: 25px 20px;
+.hlavicka .menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+.hlavicka .menu__list {
+  display: none;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+.hlavicka .menu__link {
+  display: block;
+  padding: 15px;
   text-decoration: none;
-  color: #009FE3;
-  font-size: 20px;
-}
-.hlavicka .menu li {
-  display: inline-block;
-}
-.hlavicka .menu a:hover,
-.hlavicka .menu a:focus .menu a:active {
-  font-weight: 700;
 }
 
+@media screen and (max-width: 799px) {
+  .menu__checkbox:checked ~ .menu__list {
+    display: block;
+  }
+}
+@media screen and (min-width: 800px) {
+  .menu__toggler {
+    display: none;
+  }
+  .hlavicka {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .hlavicka .logo {
+    width: 300px;
+  }
+  .hlavicka .menu a {
+    display: flex;
+    text-align: right;
+    padding: 25px 20px;
+    list-style: none;
+    text-decoration: none;
+    color: #009FE3;
+    font-size: 20px;
+  }
+  .hlavicka .menu li {
+    display: inline-block;
+  }
+  .hlavicka .menu a:hover,
+  .hlavicka .menu a:focus .menu a:active {
+    font-weight: 700;
+  }
+}
+/* MAIN */
 .hero {
   margin: 0 auto;
   display: block;
@@ -91,23 +119,41 @@ body {
   max-width: 70px;
 }
 
-.aktualne {
-  display: flex;
-}
-.aktualne .levy {
-  flex: 0 0 50%;
-  margin: 0 auto;
-  padding: 60px;
-}
-.aktualne .pravy {
-  flex: 0 0 50%;
-  margin: 0 auto;
-  padding: 40px 60px;
-}
-.aktualne .pravy .aktualneimg {
-  width: 400px;
+body {
+  max-width: 1400px;
+  margin: auto;
 }
 
+.aktualne {
+  display: block;
+}
+
+.levy,
+.pravy {
+  flex: none;
+  width: auto;
+  margin: 0;
+  padding: 40px;
+}
+
+.aktualneimg {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .aktualne {
+    display: flex;
+  }
+  .aktualne .levy,
+  .aktualne .pravy {
+    flex: 0 0 50%;
+    margin: 0 auto;
+    padding: 60px;
+  }
+  .aktualne .aktualneimg {
+    width: 400px;
+  }
+}
 .button {
   color: #009FE3;
   font-size: 16px;
@@ -131,39 +177,70 @@ body {
 }
 
 .povodne {
-  display: flex;
-}
-.povodne .levy {
-  flex: 0 0 50%;
-  margin: 0 auto;
-  padding: 60px;
-}
-.povodne .levy .foto_2002 {
-  width: 600px;
-}
-.povodne .pravy {
-  flex: 0 0 50%;
-  margin: 0 auto;
-  padding: 60px;
+  display: block;
 }
 
+.levy,
+.pravy {
+  flex: none;
+  width: auto;
+  margin: 0;
+  padding: 40px;
+}
+
+.foto_2013_2 {
+  width: 100%;
+  max-width: 600px;
+}
+
+@media screen and (min-width: 800px) {
+  .povodne {
+    display: flex;
+  }
+  .povodne .levy {
+    flex: 0 0 50%;
+    margin: 0 auto;
+    padding: 60px;
+  }
+  .povodne .pravy {
+    flex: 0 0 50%;
+    margin: 0 auto;
+    padding: 60px;
+  }
+}
 .protipovodnovky {
-  display: flex;
+  display: block;
 }
-.protipovodnovky .levy {
-  flex: 0 0 50%;
-  margin: 0 auto;
-  padding: 60px;
-}
+.protipovodnovky .levy,
 .protipovodnovky .pravy {
-  flex: 0 0 50%;
-  margin: 0 auto;
-  padding: 60px;
+  flex: none;
+  width: auto;
+  margin: 0;
+  padding: 40px;
 }
-.protipovodnovky .pravy .foto_2013 {
-  width: 600px;
+.protipovodnovky .foto_2013 {
+  width: 100%;
 }
 
+@media screen and (min-width: 800px) {
+  .protipovodnovky {
+    display: flex;
+  }
+  .protipovodnovky .levy {
+    flex: 0 0 50%;
+    margin: 0 auto;
+    padding: 60px;
+  }
+  .protipovodnovky .pravy {
+    flex: 0 0 50%;
+    margin: 0 auto;
+    padding: 60px;
+  }
+  .protipovodnovky .pravy .foto_2013 {
+    width: 600px;
+  }
+}
+/* PATIČKA */
 .paticka {
   background-image: url(/images/paticka_1100x417.png);
   padding: 30px 0;
@@ -176,27 +253,47 @@ body {
 }
 
 /* POVODNĚ */
-.povodne2013, .povodne2002 {
+.povodne2013,
+.povodne2002 {
   padding: 60px;
 }
 
 .gallery__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 300px;
+  display: block;
   gap: 1px;
 }
 
 .gallery__item {
   width: 100%;
-  height: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .gallery__item:nth-child(5n+2) {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-column: unset;
+  grid-row: unset;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+  }
+  .gallery__item:nth-child(5n+2) {
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 100%;
+    height: 100%;
+  }
+}
+/* PROTIPOVODŇOVKY PAGE */
+.protipovodnova {
+  padding: 60px;
 }
 
 /* KONTAKT */
@@ -204,5 +301,14 @@ body {
   padding: 60px;
 }
 .kontakt a {
+  color: #009FE3;
+}
+
+/* CLANKY AKTUALNE */
+.clanek {
+  padding: 60px;
+}
+.clanek a {
+  text-decoration: none;
   color: #009FE3;
 }/*# sourceMappingURL=style.css.map */
