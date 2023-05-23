@@ -31,38 +31,22 @@ p {
 }
 
 /* HEADER */
-.hlavicka {
-  margin: 0 auto;
-  padding: 0 20px;
-}
 .hlavicka .logo {
-  max-width: 300px;
+  width: 300px;
 }
-.hlavicka .menu__checkbox {
-  position: absolute;
-  left: -9999px;
-}
-.hlavicka .menu__list {
-  display: none;
-  margin: 0;
-  padding: 0;
+.hlavicka .menu a {
+  text-align: right;
+  padding: 25px 20px;
   list-style: none;
-}
-.hlavicka .menu__link {
-  display: block;
-  padding: 15px;
   text-decoration: none;
+  color: #009FE3;
+  font-size: 22px;
+}
+.hlavicka .menu li {
+  display: block;
 }
 
-@media screen and (max-width: 799px) {
-  .menu__checkbox:checked ~ .menu__list {
-    display: block;
-  }
-}
 @media screen and (min-width: 800px) {
-  .menu__toggler {
-    display: none;
-  }
   .hlavicka {
     display: flex;
     justify-content: space-between;
@@ -79,29 +63,31 @@ p {
     list-style: none;
     text-decoration: none;
     color: #009FE3;
-    font-size: 20px;
+    font-size: 22px;
   }
   .hlavicka .menu li {
     display: inline-block;
   }
   .hlavicka .menu a:hover,
-  .hlavicka .menu a:focus .menu a:active {
+  .hlavicka .menu a:focus,
+  .hlavicka .menu a:active {
     font-weight: 700;
   }
 }
+.heropicture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
+}
+
 /* MAIN */
 .hero {
   margin: 0 auto;
   display: block;
   background-color: #E9FAFF;
   padding-bottom: 20px;
-}
-.hero .heropicture {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  height: 100%;
 }
 .hero .onecolumn {
   text-align: center;
@@ -133,7 +119,7 @@ body {
   flex: none;
   width: auto;
   margin: 0;
-  padding: 40px;
+  padding: 20px;
 }
 
 .aktualneimg {
@@ -148,7 +134,7 @@ body {
   .aktualne .pravy {
     flex: 0 0 50%;
     margin: 0 auto;
-    padding: 60px;
+    padding: 20px;
   }
   .aktualne .aktualneimg {
     width: 400px;
@@ -157,17 +143,13 @@ body {
 .button {
   color: #009FE3;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
   text-decoration: none;
-  border: #009FE3 1px solid;
-  border-radius: 5px;
-  padding: 3.3333333333px 20px;
-  margin: 20px 0;
 }
-
-.button a:hover,
-.button a:focus .button a:active {
+.button .button a:hover,
+.button .button a:focus,
+.button .button a:active {
   font-weight: 700;
 }
 
@@ -185,7 +167,7 @@ body {
   flex: none;
   width: auto;
   margin: 0;
-  padding: 40px;
+  padding: 20px;
 }
 
 .foto_2013_2 {
@@ -220,6 +202,7 @@ body {
 }
 .protipovodnovky .foto_2013 {
   width: 100%;
+  max-width: 600px;
 }
 
 @media screen and (min-width: 800px) {
@@ -235,9 +218,6 @@ body {
     flex: 0 0 50%;
     margin: 0 auto;
     padding: 60px;
-  }
-  .protipovodnovky .pravy .foto_2013 {
-    width: 600px;
   }
 }
 /* PATIČKA */
@@ -255,7 +235,7 @@ body {
 /* POVODNĚ */
 .povodne2013,
 .povodne2002 {
-  padding: 60px;
+  padding: 20px;
 }
 
 .gallery__grid {
@@ -279,6 +259,10 @@ body {
 }
 
 @media screen and (min-width: 800px) {
+  .povodne2013,
+  .povodne2002 {
+    padding: 20px 60px;
+  }
   .gallery__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -293,22 +277,69 @@ body {
 }
 /* PROTIPOVODŇOVKY PAGE */
 .protipovodnova {
-  padding: 60px;
+  padding: 20px;
 }
 
+@media screen and (min-width: 800px) {
+  .protipovodnova {
+    padding: 20px 60px;
+  }
+}
 /* KONTAKT */
 .kontakt {
-  padding: 60px;
+  padding: 20px;
 }
 .kontakt a {
   color: #009FE3;
 }
 
-/* CLANKY AKTUALNE */
-.clanek {
-  padding: 60px;
+@media screen and (min-width: 800px) {
+  .kontakt {
+    padding: 20px 60px;
+  }
+  .kontakt a {
+    color: #009FE3;
+  }
 }
-.clanek a {
+/* AKTUALNE */
+.clanky {
+  padding: 20px;
+}
+.clanky a {
   text-decoration: none;
   color: #009FE3;
+}
+
+@media screen and (min-width: 800px) {
+  .clanky {
+    padding: 20px 60px;
+  }
+  a {
+    text-decoration: none;
+    color: #009FE3;
+  }
+}
+/* AKTUALNE CLANKY*/
+.article {
+  padding: 20px;
+}
+.article .article__meta {
+  color: #009FE3;
+}
+.article .article__perex {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .article {
+    padding: 60px;
+  }
+  .article .article__meta {
+    color: #009FE3;
+  }
+  .article .article__perex {
+    font-weight: 500;
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
 layout: clanek.njk
 title: Petice za protipovodňová opatření
 date: 2013-06-12T14:30
-perex: Petici za vybudování protipovodňových opatření v Dolní Šárce jsme adresovali primátoru a radě hl. m. Prahy, starostce a radě MČ Praha 6 a ministrovi životního prostředí. Sebrali jsme více než 500 podpisů!
+perex: Petici za vybudování protipovodňových opatření v Dolní Šárce jsme adresovali primátoru a radě hl. m. Prahy, starostce a radě MČ Praha 6 a ministrovi životního prostředí. Posbírali jsme více než 500 podpisů!
 tags: aktualne
 ---
 

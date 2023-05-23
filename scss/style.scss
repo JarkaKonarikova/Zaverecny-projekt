@@ -32,56 +32,40 @@ p {
 }
 
 
-
 /* HEADER */
 
 .hlavicka {
-    margin: 0 auto;
-    padding: 0 $spacer;
 
     .logo {
-       max-width: 300px;
+        width: 300px;
     }
 
-    .menu__checkbox {
-        position: absolute;
-        left: -9999px;
-    }
-
-    .menu__list {
-        display: none;
-        margin: 0;
-        padding: 0;
+    .menu a {
+        text-align: right;
+        padding: 25px 20px;
         list-style: none;
-    }
-
-    .menu__link {
-        display: block;
-        padding: 15px;
         text-decoration: none;
-    }
-}
+        color: $blue;
+        font-size: 22px;
+        }
 
-    @media screen and (max-width: 799px) {
-        .menu__checkbox:checked ~ .menu__list {
+        .menu li {
             display: block;
         }
-    }
+}
 
     @media screen and (min-width: 800px) {
-        .menu__toggler {
-            display: none;
-        }
+    
 
         .hlavicka {
              display: flex;
              justify-content: space-between;
              margin: 0 auto;
             padding: 0 $spacer;
-               
+              
             .logo {
-                    width: 300px;
-                }
+                width: 300px;
+            }
             
             .menu a {
                 display: flex;
@@ -90,7 +74,7 @@ p {
                 list-style: none;
                 text-decoration: none;
                 color: #009FE3;
-                font-size: 20px;
+                font-size: 22px;
                 }
                 
             .menu li {
@@ -98,14 +82,18 @@ p {
                 }
                 
             .menu a:hover,
-            .menu a:focus 
+            .menu a:focus, 
             .menu a:active {
                 font-weight: 700;
                 }
             }    
         }
    
-
+ .heropicture {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        }
 
   
 /* MAIN */
@@ -116,11 +104,7 @@ p {
 	background-color: #E9FAFF;
     padding-bottom: $spacer;
 
-    .heropicture {
-	    object-fit: cover;
-	    object-position: center;
-	    height: 100%;
-    }
+   
 
     .onecolumn {
 	text-align: center;
@@ -156,7 +140,7 @@ body {
     flex: none;
     width: auto;
     margin: 0;
-    padding: $spacer*2;
+    padding: $spacer;
 }
 
 .aktualneimg {
@@ -172,7 +156,7 @@ body {
         .pravy {
         flex: 0 0 50%;
         margin: 0 auto;
-        padding: $spacer*3;
+        padding: $spacer;
         }
 
         .aktualneimg {
@@ -185,20 +169,16 @@ body {
 .button {
     color: $blue;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: left;
     text-decoration: none;
-    border: $blue 1px solid;
-    border-radius: 5px;
-    padding: $spacer/6 $spacer;
-    margin: $spacer 0;
-}
+    
 
-.button a:hover,
-.button a:focus 
-.button a:active {
+    .button a:hover,
+    .button a:focus, 
+    .button a:active {
     font-weight: 700;
-
+}
 }
 .vlnka {
 	max-width: 200px;
@@ -214,7 +194,7 @@ body {
     flex: none;
     width: auto;
     margin: 0;
-    padding: $spacer*2;
+    padding: $spacer;
 }
 
 .foto_2013_2 {
@@ -255,6 +235,7 @@ body {
 
 .foto_2013 {
     width: 100%;
+    max-width: 600px;
 }
 }
 
@@ -274,12 +255,10 @@ body {
          margin: 0 auto;
          padding: $spacer*3;
 
-         .foto_2013 {
-            width: 600px;
         } 
     }
 }
-}
+
 
 /* PATIČKA */
 .paticka {
@@ -298,7 +277,7 @@ body {
 
 .povodne2013,
 .povodne2002 {
-    padding: $spacer*3;
+    padding: $spacer;
 }
 
 .gallery__grid {
@@ -321,6 +300,11 @@ body {
 }
 
 @media screen and (min-width: 800px) {
+
+    .povodne2013,
+    .povodne2002 {
+    padding: $spacer $spacer*3;
+}
     .gallery__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -337,26 +321,82 @@ body {
 
   /* PROTIPOVODŇOVKY PAGE */
   .protipovodnova {
-    padding: $spacer*3;
+    padding: $spacer;
   }
+
+  @media screen and (min-width: 800px) { 
+  .protipovodnova {
+    padding: $spacer $spacer*3;
+  }
+}
 
  /* KONTAKT */
 
  .kontakt {
-    padding: $spacer*3;
+    padding: $spacer;
 
     a {
         color: $blue;
     }
  }
-  
- /* CLANKY AKTUALNE */
 
- .clanek {
-   padding: $spacer*3;
+ @media screen and (min-width: 800px) { 
+    .kontakt {
+        padding: $spacer $spacer*3;
+    
+        a {
+            color: $blue;
+        }
+     }
+    }
+  
+ /* AKTUALNE */
+
+ .clanky {
+   padding: $spacer;
 
     a {
         text-decoration: none;
         color: $blue;
+    }
+}
+
+@media screen and (min-width: 800px) { 
+    .clanky {
+        padding: $spacer $spacer*3;
+    }
+    a {
+        text-decoration: none;
+        color: $blue;
+    }
+}
+
+/* AKTUALNE CLANKY*/
+.article {
+    padding: $spacer;
+    
+    .article__meta {
+        color: $blue;
+    }
+
+    .article__perex {
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width: 800px) { 
+    .article {
+        padding: $spacer*3;
+        
+        .article__meta {
+            color: $blue;
+        }
+    
+        .article__perex {
+            font-weight: 500;
+            font-size: 20px;
+        }
     }
 }
