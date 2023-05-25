@@ -52,6 +52,7 @@ p {
 
     .logo2 {
         width: 150px;
+        margin-right: $spacer;
     }
 
     .menu a {
@@ -59,6 +60,7 @@ p {
         margin: 20px;
         list-style: none;
         text-decoration: none;
+        text-shadow: 0.5px 0.5px 0px $black;
         color: $blue;
         font-size: 22px;
         }

@@ -47,12 +47,14 @@ p {
 }
 .hlavicka .logo2 {
   width: 150px;
+  margin-right: 20px;
 }
 .hlavicka .menu a {
   text-align: right;
   margin: 20px;
   list-style: none;
   text-decoration: none;
+  text-shadow: 0.5px 0.5px 0px #1D1D1B;
   color: #009FE3;
   font-size: 22px;
 }
