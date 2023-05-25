@@ -6,6 +6,5 @@ perex: Ověřovací studie Pöyry navrhla jiné řešení protipovodňové ochra
 tags: aktualne
 ---
 
-# Vyhledávací  studie Pöyry
  
 text o ověřovací studii Pöyry

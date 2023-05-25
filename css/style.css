@@ -31,12 +31,25 @@ p {
 }
 
 /* HEADER */
+.hlavicka {
+  background-image: url(/images/Podbaba-under-watter_1400x531.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 531px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .hlavicka .logo {
-  width: 300px;
+  width: 250px;
 }
 .hlavicka .menu a {
   text-align: right;
-  padding: 25px 20px;
+  margin: 20px;
   list-style: none;
   text-decoration: none;
   color: #009FE3;
@@ -50,6 +63,7 @@ p {
   .hlavicka {
     display: flex;
     justify-content: space-between;
+    align-items: start;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -59,7 +73,6 @@ p {
   .hlavicka .menu a {
     display: flex;
     text-align: right;
-    padding: 25px 20px;
     list-style: none;
     text-decoration: none;
     color: #009FE3;
@@ -123,7 +136,7 @@ body {
 }
 
 .aktualneimg {
-  width: 100%;
+  max-width: 300px;
 }
 
 @media screen and (min-width: 800px) {
@@ -154,25 +167,29 @@ body {
 }
 
 .vlnka {
-  max-width: 200px;
+  max-width: 150px;
   margin: auto;
+  padding: 20px 0;
 }
 
 .povodne {
   display: block;
 }
-
-.levy,
-.pravy {
+.povodne .levy {
+  background-image: url(/images/foto_2013_2.jpg);
+  margin: 60px;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 431px;
+  max-width: 100%;
+}
+.povodne .levy,
+.povodne .pravy {
   flex: none;
   width: auto;
   margin: 0;
   padding: 20px;
-}
-
-.foto_2013_2 {
-  width: 100%;
-  max-width: 600px;
 }
 
 @media screen and (min-width: 800px) {
@@ -192,6 +209,15 @@ body {
 }
 .protipovodnovky {
   display: block;
+}
+.protipovodnovky .pravy {
+  background-image: url(/images/stock-photo-floods-2.jpg);
+  margin: 60px;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 431px;
+  width-width: 100%;
 }
 .protipovodnovky .levy,
 .protipovodnovky .pravy {
@@ -267,6 +293,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 300px;
+    grid-auto-flow: dense;
   }
   .gallery__item:nth-child(5n+2) {
     grid-column: span 2;

@@ -36,13 +36,27 @@ p {
 
 .hlavicka {
 
+    background-image: url(/images/Podbaba-under-watter_1400x531.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 531px; 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0 auto;
+    padding: 0 $spacer;
+
+
     .logo {
-        width: 300px;
+        width: 250px;
+       
     }
 
     .menu a {
         text-align: right;
-        padding: 25px 20px;
+        margin: 20px;
         list-style: none;
         text-decoration: none;
         color: $blue;
@@ -60,6 +74,7 @@ p {
         .hlavicka {
              display: flex;
              justify-content: space-between;
+             align-items: start;
              margin: 0 auto;
             padding: 0 $spacer;
               
@@ -70,7 +85,7 @@ p {
             .menu a {
                 display: flex;
                 text-align: right;
-                padding: 25px 20px;
+            
                 list-style: none;
                 text-decoration: none;
                 color: #009FE3;
@@ -144,7 +159,7 @@ body {
 }
 
 .aktualneimg {
-    width: 100%;
+    max-width: 300px;
 }
 
 @media screen and (min-width: 800px) {
@@ -179,16 +194,28 @@ body {
     .button a:active {
     font-weight: 700;
 }
+
 }
 .vlnka {
-	max-width: 200px;
+	max-width: 150px;
 	margin: auto;
+    padding: $spacer 0;
 }
 
 .povodne {
     display: block;
-}
 
+
+.levy {
+    background-image: url(/images/foto_2013_2.jpg);
+    margin: $spacer*3;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+ height: 431px;
+    max-width: 100%; 
+
+}
 .levy,
 .pravy {
     flex: none;
@@ -197,11 +224,7 @@ body {
     padding: $spacer;
 }
 
-.foto_2013_2 {
-    width: 100%;
-    max-width: 600px;
 }
-
 @media screen and (min-width: 800px) {
     .povodne {
         display: flex;
@@ -225,6 +248,15 @@ body {
 .protipovodnovky {
     display: block;
 
+    .pravy {
+        background-image: url(/images/stock-photo-floods-2.jpg);
+        margin: $spacer*3;
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+     height: 431px;
+        width-width: 100%; 
+    }
 .levy,
 .pravy {
     flex: none;
@@ -309,14 +341,17 @@ body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 300px;
+        grid-auto-flow: dense;
+     
     }
 
     .gallery__item:nth-child(5n+2) {
         grid-column: span 2;
         grid-row: span 2;
         width: 100%;
-        height: 100%;
+        height: 100%;   
     }
+    
 }
 
   /* PROTIPOVODŇOVKY PAGE */
