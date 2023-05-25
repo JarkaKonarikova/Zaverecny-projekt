@@ -43,7 +43,7 @@ p {
     height: 531px; 
     width: 100%; 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: start;
     margin: 0 auto;
     padding: 0 $spacer;
@@ -64,7 +64,7 @@ p {
         }
 
         .menu li {
-            display: block;
+            display: inline-block;
         }
 }
 
