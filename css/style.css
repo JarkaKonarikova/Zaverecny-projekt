@@ -42,12 +42,12 @@ p {
   justify-content: space-evenly;
   align-items: start;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
   max-width: 600 px;
 }
 .hlavicka .logo2 {
   width: 150px;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 .hlavicka .menu a {
   text-align: right;
@@ -57,6 +57,7 @@ p {
   text-shadow: 0.5px 0.5px 0px #1D1D1B;
   color: #009FE3;
   font-size: 22px;
+  font-weight: 400;
 }
 .hlavicka .menu li {
   display: block;
