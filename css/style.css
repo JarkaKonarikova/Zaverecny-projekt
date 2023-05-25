@@ -43,9 +43,10 @@ p {
   align-items: start;
   margin: 0 auto;
   padding: 0 20px;
+  max-width: 600 px;
 }
-.hlavicka .logo {
-  width: 250px;
+.hlavicka .logo2 {
+  width: 150px;
 }
 .hlavicka .menu a {
   text-align: right;
@@ -56,7 +57,7 @@ p {
   font-size: 22px;
 }
 .hlavicka .menu li {
-  display: inline-block;
+  display: block;
 }
 
 @media screen and (min-width: 800px) {
@@ -67,8 +68,8 @@ p {
     margin: 0 auto;
     padding: 0 20px;
   }
-  .hlavicka .logo {
-    width: 300px;
+  .hlavicka .logo2 {
+    width: 150px;
   }
   .hlavicka .menu a {
     display: flex;

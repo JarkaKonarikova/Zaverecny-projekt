@@ -47,11 +47,11 @@ p {
     align-items: start;
     margin: 0 auto;
     padding: 0 $spacer;
+    max-width: 600 px;
 
 
-    .logo {
-        width: 250px;
-       
+    .logo2 {
+        width: 150px;
     }
 
     .menu a {
@@ -64,7 +64,7 @@ p {
         }
 
         .menu li {
-            display: inline-block;
+            display: block;
         }
 }
 
@@ -78,9 +78,11 @@ p {
              margin: 0 auto;
             padding: 0 $spacer;
               
-            .logo {
-                width: 300px;
+            .logo2 {
+                width: 150px;
             }
+
+           
             
             .menu a {
                 display: flex;
@@ -160,6 +162,8 @@ body {
 
 .aktualneimg {
     max-width: 300px;
+
+
 }
 
 @media screen and (min-width: 800px) {
