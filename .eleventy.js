@@ -18,6 +18,6 @@ module.exports = function(eleventyConfig) {
     dataTemplateEngine: "njk",
   }
 
-  eleventyConfig.addPassthroughCopy("download");
+    eleventyConfig.addPassthroughCopy("download");
 
 };
