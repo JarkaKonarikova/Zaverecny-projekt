@@ -5,8 +5,6 @@ date: 2021-04-01T14:30
 perex: Územní studie Dolní-Tichá Šárka navrhla novou variantu protipovodňových opatření.
 tags: aktualne
 ---
-
-Nová varianta protipovodňových opatření
  
 V roce 2018 MČ zadala zpracování územní studie na Šárecké údolí. Její součástí byl také požadavek na řešení protipovodňové ochrany. 
 
