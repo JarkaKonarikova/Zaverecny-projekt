@@ -1,7 +1,7 @@
 ---
 layout: clanek.njk
 title: Protipovodňový pochod
-date: 2023-05-21T14:30
+date: 2023-06-04T20:30
 perex: K výročí 10 let od povodní na Vltavě v roce 2013 se 4. 6. 2013 uskutečnil pochod za protipovodňová opatření v Dolní Šárce. Pochodu se zúčastnilo přibližně 110 účastníků. Průvod s transparenty a rekvizitami přibližujícími život v zaplaveném území došel k přívozu Podbaba, kde proběhla diskuze občanů s primátorem Bohuslavem Svobodou, starostou Prahy 6 Jakubem Stárkem a paní Markétou Štalmachovou, ředitelkou odboru bezpečnosti magistrátu hl. m. Prahy. Primátor i starosta Prahy 6 přislíbili občanům, že se budou problematikou aktivně zabývat, a již na konci června se občané dozvědí stanovisko magistrátu k aktuálnímu, třetímu návrhu řešení protipovodňových opatření v Dolní Šárce.
 foto: logo_hlava_napis.svg
 tags: aktualne
