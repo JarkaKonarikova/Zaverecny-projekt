@@ -317,7 +317,8 @@ body {
 /* POVODNĚ */
 
 .povodne2013,
-.povodne2002 {
+.povodne2002, 
+.pribehy {
     padding: $spacer;
 }
 
@@ -343,7 +344,8 @@ body {
 @media screen and (min-width: 800px) {
 
     .povodne2013,
-    .povodne2002 {
+    .povodne2002, 
+    .pribehy {
     padding: $spacer $spacer*3;
 }
     .gallery__grid {
