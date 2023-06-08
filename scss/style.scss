@@ -153,7 +153,7 @@ body {
 
 .aktualne {
     display: block;
-}
+
 
 .levy,
 .pravy {
@@ -163,12 +163,16 @@ body {
     padding: $spacer;
 }
 
-.aktualneimg {
-    max-width: 300px;
-
-
+.pravy {
+    background-image: url(/images/foto_pochod.jpeg);
+    margin: $spacer*3;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 431px;
+    max-width: 100%; 
 }
-
+}
 @media screen and (min-width: 800px) {
     .aktualne {
         display: flex;
@@ -181,9 +185,7 @@ body {
         padding: $spacer;
         }
 
-        .aktualneimg {
-        width: 400px;
-    }
+    
     }
 }
 

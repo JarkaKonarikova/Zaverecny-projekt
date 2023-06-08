@@ -2,9 +2,10 @@
 layout: clanek.njk
 title: MČ Praha 6 žádá po magistrátu prověřit a realizovat protipovodňová opatření Šáreckého údolí
 date: 2022-02-07T18:30
-perex: Usnesení Rady MČ Praha 6 z 7. 2. 2022 č. 3210/22 - Protipovodňová opatření Šáreckého údolí - podnět na pořízení změny ÚPn SÚ HMP iniciované MČ P6
+perex: Rada MČ Praha 6 se 7. 2. 2022 usnesla, že požaduje po magistrátu prověřit funkčnost navrženého řešení protipovodňových opatření v Dolní Šárce, zařadit dopracované řešení do seznamu protipovodňových opatření HMP a zařadit podnět do seznamu pořizovaných změn ÚPn SÚ HMP. 
 tags: aktualne
 ---
+Usnesení č. 3210/22
 
 Rada městské části
 

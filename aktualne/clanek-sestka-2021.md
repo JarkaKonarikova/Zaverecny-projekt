@@ -2,11 +2,11 @@
 layout: clanek.njk
 title: Článek v časopise Šestka "Jak se žije Šáreckým"
 date: 2021-07-01T14:30
-perex: Text článku v časopise Šestka k osmému výročí povodní v Šáreckém údolí 
+perex: Osmé výročí povodní na Vltavě obyvatelé Dolní Šárky strávili nervózně kvůli stavu povodňové bdělosti, která byla vyhlášena v povodí Vltavy. Všichni Pražané pamatují devastující povodně v roce 2002, po kterých byl zbudován systém protipovodňových opatření. Proti dalším povodním v roce 2013 tak byla většina Prahy chráněná kromě několika oblastí, kde byla protipovodňová opatření vybudována chybně, anebo vůbec. Což je případ Dolní Šárky. Po povodních v červnu 2013, kdy byly opětovně zaplaveny domy v ulici V Podbabě až do výše 2 metrů, podali místní petici, na jejíž základě MČ P6 vypsala vyhledávací studii. Tu pak předala magistrátu a dále se o ni nezajímala. Magistrát vypsal v roce 2015 další studii. Od té doby se obyvatelé Dolní Šárky marně dožadují řešení protipovodňových opatření, ale ani magistrát, ani MČP6 žádnou aktivitu nevyvíjejí.
 tags: aktualne
 ---
  
-Osmé výročí povodní na Vltavě obyvatelé Dolní Šárky strávili nervózně kvůli stavu povodňové bdělosti, která byla vyhlášena v povodí Vltavy. Všichni Pražané pamatují devastující povodně v roce 2002, po kterých byl zbudován systém protipovodňových opatření. Proti dalším povodním v roce 2013 tak byla většina Prahy chráněná kromě několika oblastí, kde byla protipovodňová opatření vybudována chybně, anebo vůbec. Což je případ Dolní Šárky. Po povodních v červnu 2013, kdy byly opětovně zaplaveny domy v ulici V Podbabě až do výše 2 metrů, podali místní petici, na jejíž základě MČ P6 vypsala vyhledávací studii. Tu pak předala magistrátu a dále se o ni nezajímala. Magistrát vypsal v roce 2015 další studii. Od té doby se obyvatelé Dolní Šárky marně dožadují řešení protipovodňových opatření, ale ani magistrát, ani MČP6 žádnou aktivitu nevyvíjejí.
+
  
 Dalším problémem, který v posledních dnech a týdnech trápí Šárecké, je doprava. Se zlepšující se situací ohledně covidu se zhoršuje situace na silnicích. Jediná spojovací cesta ze Šáreckého údolí do Dejvic, ulice V Podbabě, se ráno zaplní auty od viaduktu přes Břetislavku až do Lysolají. Školní autobus s dětmi tak popojíždí v zácpě s ostatními auty a běžně nabere zpoždění 15-20 minut, takže to děti do školy včas nestihnou. Cesta ze Suchdola je také ucpaná a Horoměřická se opravuje. V Suchdole a obcích na severozápad od Prahy žije kolem 20 tis. obyvatel plus 19 tis. studentů, kteří denně dojíždějí do Prahy a bez existence rychlého kolejového spojení tak všichni společně trčí v zácpě.
  

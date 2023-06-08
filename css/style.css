@@ -130,17 +130,21 @@ body {
 .aktualne {
   display: block;
 }
-
-.levy,
-.pravy {
+.aktualne .levy,
+.aktualne .pravy {
   flex: none;
   width: auto;
   margin: 0;
   padding: 20px;
 }
-
-.aktualneimg {
-  max-width: 300px;
+.aktualne .pravy {
+  background-image: url(/images/foto_pochod.jpeg);
+  margin: 60px;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 431px;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 800px) {
@@ -152,9 +156,6 @@ body {
     flex: 0 0 50%;
     margin: 0 auto;
     padding: 20px;
-  }
-  .aktualne .aktualneimg {
-    width: 400px;
   }
 }
 .button {
