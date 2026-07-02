@@ -28,5 +28,5 @@ Jarka Koňaříková
 Vladan Hodek
 
 Technická data viz příloha:
-https://docs.google.com/document/d/19BMG4nAOkARNJ4Q_Xw8_WWw88xaiNWDouocQjB22rWw/edit?usp=sharing
+[Otevřít technická data](https://docs.google.com/document/d/19BMG4nAOkARNJ4Q_Xw8_WWw88xaiNWDouocQjB22rWw/edit?tab=t.0)
 
