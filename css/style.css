@@ -1,379 +1,386 @@
 @charset "UTF-8";
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-*, ::before, ::after {
-  box-sizing: inherit;
+*,
+::before,
+::after {
+	box-sizing: inherit;
 }
 
-h1, h2, h3, p, a {
-  font-family: "Roboto", sans-serif;
-  line-height: 1, 5;
+h1,
+h2,
+h3,
+p,
+a {
+	font-family: "Roboto", sans-serif;
+	line-height: 1, 5;
 }
 
 h1 {
-  font-size: 500;
-  color: #009FE3;
-  font-size: 36px;
+	font-size: 500;
+	color: #009fe3;
+	font-size: 36px;
 }
 
 h2 {
-  font-size: 500;
-  color: #1D1D1B;
-  font-size: 24px;
+	font-size: 500;
+	color: #1d1d1b;
+	font-size: 24px;
 }
 
 p {
-  font-size: 300;
-  color: #1D1D1B;
-  font-size: 16px;
+	font-size: 300;
+	color: #1d1d1b;
+	font-size: 16px;
 }
 
 /* HEADER */
 .hlavicka {
-  background-image: url(/images/Podbaba-under-watter_1400x531.png);
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 531px;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: start;
-  margin: 0 auto;
-  padding: 0 40px;
-  max-width: 600 px;
+	background-image: url(/images/Podbaba-under-watter_1400x531.png);
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 531px;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: start;
+	margin: 0 auto;
+	padding: 0 40px;
+	max-width: 600 px;
 }
 .hlavicka .logo2 {
-  width: 150px;
-  margin-left: 20px;
+	width: 150px;
+	margin-left: 20px;
 }
 .hlavicka .menu a {
-  text-align: right;
-  margin: 20px;
-  list-style: none;
-  text-decoration: none;
-  text-shadow: 0.5px 0.5px 0px #1D1D1B;
-  color: #009FE3;
-  font-size: 22px;
-  font-weight: 400;
+	text-align: right;
+	margin: 20px;
+	list-style: none;
+	text-decoration: none;
+	text-shadow: 0.5px 0.5px 0px #1d1d1b;
+	color: #009fe3;
+	font-size: 22px;
+	font-weight: 400;
 }
 .hlavicka .menu li {
-  display: block;
+	display: block;
 }
 
 @media screen and (min-width: 800px) {
-  .hlavicka {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  .hlavicka .logo2 {
-    width: 150px;
-  }
-  .hlavicka .menu a {
-    display: flex;
-    text-align: right;
-    list-style: none;
-    text-decoration: none;
-    color: #009FE3;
-    font-size: 22px;
-  }
-  .hlavicka .menu li {
-    display: inline-block;
-  }
-  .hlavicka .menu a:hover,
-  .hlavicka .menu a:focus,
-  .hlavicka .menu a:active {
-    font-weight: 700;
-  }
+	.hlavicka {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	.hlavicka .logo2 {
+		width: 150px;
+	}
+	.hlavicka .menu a {
+		display: flex;
+		text-align: right;
+		list-style: none;
+		text-decoration: none;
+		color: #009fe3;
+		font-size: 22px;
+	}
+	.hlavicka .menu li {
+		display: inline-block;
+	}
+	.hlavicka .menu a:hover,
+	.hlavicka .menu a:focus,
+	.hlavicka .menu a:active {
+		font-weight: 700;
+	}
 }
 .heropicture {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
+	height: 100%;
 }
 
 /* MAIN */
 .hero {
-  margin: 0 auto;
-  display: block;
-  background-color: #E9FAFF;
-  padding-bottom: 20px;
+	margin: 0 auto;
+	display: block;
+	background-color: #e9faff;
+	padding-bottom: 20px;
 }
 .hero .onecolumn {
-  text-align: center;
-  max-width: 900px;
-  margin: auto;
-  padding: 40px;
+	text-align: center;
+	max-width: 900px;
+	margin: auto;
+	padding: 40px;
 }
 .hero .headline {
-  display: flex;
+	display: flex;
 }
 .hero .headline h1 {
-  margin: auto;
+	margin: auto;
 }
-.hero .kapky_vlevo, .hero .kapky_vpravo {
-  max-width: 70px;
+.hero .kapky_vlevo,
+.hero .kapky_vpravo {
+	max-width: 70px;
 }
 
 body {
-  max-width: 1400px;
-  margin: auto;
+	max-width: 1400px;
+	margin: auto;
 }
 
 .aktualne {
-  display: block;
+	display: block;
 }
 .aktualne .levy,
 .aktualne .pravy {
-  flex: none;
-  width: auto;
-  margin: 0;
-  padding: 20px;
+	flex: none;
+	width: auto;
+	margin: 0;
+	padding: 20px;
 }
 .aktualne .pravy {
-  background-image: url(/images/foto_pochod.jpeg);
-  margin: 60px;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 431px;
-  max-width: 100%;
+	background-image: url(/images/foto_pochod.jpeg);
+	margin: 60px;
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 431px;
+	max-width: 100%;
 }
 
 @media screen and (min-width: 800px) {
-  .aktualne {
-    display: flex;
-  }
-  .aktualne .levy,
-  .aktualne .pravy {
-    flex: 0 0 50%;
-    margin: 0 auto;
-    padding: 20px;
-  }
+	.aktualne {
+		display: flex;
+	}
+	.aktualne .levy,
+	.aktualne .pravy {
+		flex: 0 0 50%;
+		margin: 0 auto;
+		padding: 20px;
+	}
 }
 .button {
-  color: #009FE3;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: left;
-  text-decoration: none;
+	color: #009fe3;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	text-decoration: none;
 }
 .button .button a:hover,
 .button .button a:focus,
 .button .button a:active {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .vlnka {
-  max-width: 150px;
-  margin: auto;
-  padding: 20px 0;
+	max-width: 150px;
+	margin: auto;
+	padding: 20px 0;
 }
 
 .povodne {
-  display: block;
+	display: block;
 }
 .povodne .levy {
-  background-image: url(/images/foto_2013_2.jpg);
-  margin: 60px;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 431px;
-  max-width: 100%;
+	background-image: url(/images/foto_2013_2.jpg);
+	margin: 60px;
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 431px;
+	max-width: 100%;
 }
 .povodne .levy,
 .povodne .pravy {
-  flex: none;
-  width: auto;
-  margin: 0;
-  padding: 20px;
+	flex: none;
+	width: auto;
+	margin: 0;
+	padding: 20px;
 }
 
 @media screen and (min-width: 800px) {
-  .povodne {
-    display: flex;
-  }
-  .povodne .levy {
-    flex: 0 0 50%;
-    margin: 0 auto;
-    padding: 60px;
-  }
-  .povodne .pravy {
-    flex: 0 0 50%;
-    margin: 0 auto;
-    padding: 60px;
-  }
+	.povodne {
+		display: flex;
+	}
+	.povodne .levy {
+		flex: 0 0 50%;
+		margin: 0 auto;
+		padding: 60px;
+	}
+	.povodne .pravy {
+		flex: 0 0 50%;
+		margin: 0 auto;
+		padding: 60px;
+	}
 }
 .protipovodnovky {
-  display: block;
+	display: block;
 }
 .protipovodnovky .pravy {
-  background-image: url(/images/stock-photo-floods2.jpg);
-  margin: 60px;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 431px;
-  width-width: 100%;
+	background-image: url(/images/stock-photo-floods2.jpg);
+	margin: 60px;
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 431px;
+	width-width: 100%;
 }
 .protipovodnovky .levy,
 .protipovodnovky .pravy {
-  flex: none;
-  width: auto;
-  margin: 0;
-  padding: 40px;
+	flex: none;
+	width: auto;
+	margin: 0;
+	padding: 40px;
 }
 .protipovodnovky .foto_2013 {
-  width: 100%;
-  max-width: 600px;
+	width: 100%;
+	max-width: 600px;
 }
 
 @media screen and (min-width: 800px) {
-  .protipovodnovky {
-    display: flex;
-  }
-  .protipovodnovky .levy {
-    flex: 0 0 50%;
-    margin: 0 auto;
-    padding: 60px;
-  }
-  .protipovodnovky .pravy {
-    flex: 0 0 50%;
-    margin: 0 auto;
-    padding: 60px;
-  }
+	.protipovodnovky {
+		display: flex;
+	}
+	.protipovodnovky .levy {
+		flex: 0 0 50%;
+		margin: 0 auto;
+		padding: 60px;
+	}
+	.protipovodnovky .pravy {
+		flex: 0 0 50%;
+		margin: 0 auto;
+		padding: 60px;
+	}
 }
 /* PATIČKA */
 .paticka {
-  background-image: url(/images/paticka_1100x417.png);
-  padding: 30px 0;
-  text-align: center;
-  margin: 0 auto;
+	background-image: url(/images/paticka_1100x417.png);
+	padding: 30px 0;
+	text-align: center;
+	margin: 0 auto;
 }
 .paticka .textpaticka {
-  color: white;
-  padding-top: 30px;
+	color: white;
+	padding-top: 30px;
 }
 
 /* POVODNĚ */
 .povodne2013,
 .povodne2002,
 .pribehy {
-  padding: 20px;
+	padding: 20px;
 }
 
 .gallery__grid {
-  display: block;
-  gap: 1px;
+	display: block;
+	gap: 1px;
 }
 
 .gallery__item {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 20px;
+	width: 100%;
+	height: auto;
+	-o-object-fit: cover;
+	object-fit: cover;
+	margin-bottom: 20px;
 }
 
-.gallery__item:nth-child(5n+2) {
-  grid-column: unset;
-  grid-row: unset;
-  width: 100%;
-  height: auto;
+.gallery__item:nth-child(5n + 2) {
+	grid-column: unset;
+	grid-row: unset;
+	width: 100%;
+	height: auto;
 }
 
 @media screen and (min-width: 800px) {
-  .povodne2013,
-  .povodne2002,
-  .pribehy {
-    padding: 20px 60px;
-  }
-  .gallery__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    grid-auto-flow: dense;
-  }
-  .gallery__item:nth-child(5n+2) {
-    grid-column: span 2;
-    grid-row: span 2;
-    width: 100%;
-    height: 100%;
-  }
+	.povodne2013,
+	.povodne2002,
+	.pribehy {
+		padding: 20px 60px;
+	}
+	.gallery__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: 300px;
+		grid-auto-flow: dense;
+	}
+	.gallery__item:nth-child(5n + 2) {
+		grid-column: span 2;
+		grid-row: span 2;
+		width: 100%;
+		height: 100%;
+	}
 }
 /* PROTIPOVODŇOVKY PAGE */
 .protipovodnova {
-  padding: 20px;
+	padding: 20px;
 }
 
 @media screen and (min-width: 800px) {
-  .protipovodnova {
-    padding: 20px 60px;
-  }
+	.protipovodnova {
+		padding: 20px 60px;
+	}
 }
 /* KONTAKT */
 .kontakt {
-  padding: 20px;
+	padding: 20px;
 }
 .kontakt a {
-  color: #009FE3;
+	color: #009fe3;
 }
 
 @media screen and (min-width: 800px) {
-  .kontakt {
-    padding: 20px 60px;
-  }
-  .kontakt a {
-    color: #009FE3;
-  }
+	.kontakt {
+		padding: 20px 60px;
+	}
+	.kontakt a {
+		color: #009fe3;
+	}
 }
 /* AKTUALNE */
 .clanky {
-  padding: 20px;
+	padding: 20px;
 }
 .clanky a {
-  text-decoration: none;
-  color: #009FE3;
+	text-decoration: none;
+	color: #009fe3;
 }
 
 @media screen and (min-width: 800px) {
-  .clanky {
-    padding: 20px 60px;
-  }
-  a {
-    text-decoration: none;
-    color: #009FE3;
-  }
+	.clanky {
+		padding: 20px 60px;
+	}
+	a {
+		text-decoration: none;
+		color: #009fe3;
+	}
 }
 /* AKTUALNE CLANKY*/
 .article {
-  padding: 20px;
+	padding: 20px;
 }
 .article .article__meta {
-  color: #009FE3;
+	color: #009fe3;
 }
 .article .article__perex {
-  font-weight: 500;
-  font-size: 20px;
+	font-weight: 500;
+	font-size: 20px;
 }
 
 @media screen and (min-width: 800px) {
-  .article {
-    padding: 60px;
-  }
-  .article .article__meta {
-    color: #009FE3;
-  }
-  .article .article__perex {
-    font-weight: 500;
-    font-size: 20px;
-  }
-}/*# sourceMappingURL=style.css.map */
+	.article {
+		padding: 60px;
+	}
+	.article .article__meta {
+		color: #009fe3;
+	}
+	.article .article__perex {
+		font-weight: 500;
+		font-size: 20px;
+	}
+} /*# sourceMappingURL=style.css.map */

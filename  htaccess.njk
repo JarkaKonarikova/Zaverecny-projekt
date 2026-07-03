@@ -1,0 +1,69 @@
+---
+permalink: .htaccess
+---
+
+
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=8080
+RewriteCond %{HTTP_HOST} !=localhost
+RewriteCond %{HTTP_HOST} !=127.0.0.1
+RewriteCond %{REMOTE_ADDR} !=127.0.0.1
+RewriteCond %{REMOTE_ADDR} !=::1
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+
+# Non-WWW to WWW Redirect
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^vodypokrk.cz
+RewriteRule (.*) https://www.vodypokrk.cz/$1 [R=301,QSA,L]
+
+
+# 404 Redirect
+# ErrorDocument 404 /404.html
+
+
+# Set Security Headers
+<IfModule mod_headers.c>
+	Header set Strict-Transport-Security: max-age=10886400;
+	Header set Content-Security-Policy: "upgrade-insecure-requests;"
+	Header set X-Frame-Options: SAMEORIGIN
+	Header set X-Content-Type-Options: nosniff
+	Header set Referrer-Policy: "strict-origin-when-cross-origin"
+	Header set Feature-Policy: *
+	Header set Permissions-Policy: *
+</IfModule>
+
+
+# Compress Files
+<IfModule mod_deflate.c>
+	<FilesMatch "\.(css|js|x?html?|php|ico|svg)$">
+		SetOutputFilter DEFLATE
+	</FilesMatch>
+</IfModule>
+
+# Cache-Control Headers
+<IfModule mod_headers.c>
+    <FilesMatch "\.(?:html)$">
+        Header set Cache-Control "no-cache, max-age=0, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js|ico|jpe?g|png|gif|webp|ttf|otf|eot|woff2?|svg)$">
+        Header set Cache-Control "public, max-age=31104000, immutable"
+    </FilesMatch>
+</IfModule>
+
+# Turn ETags Off
+# <ifModule mod_headers.c>
+# 	Header unset ETag
+# </ifModule>
+
+# Remove Last-Modified Header
+# <ifModule mod_headers.c>
+# 	Header unset Last-Modified
+# </ifModule>

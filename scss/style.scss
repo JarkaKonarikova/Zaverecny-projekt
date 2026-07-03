@@ -40,8 +40,8 @@ p {
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
-    height: 531px; 
-    width: 100%; 
+    height: 531px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: start;
@@ -72,7 +72,7 @@ p {
 }
 
     @media screen and (min-width: 800px) {
-    
+
 
         .hlavicka {
              display: flex;
@@ -80,42 +80,42 @@ p {
              align-items: start;
              margin: 0 auto;
             padding: 0 $spacer;
-              
+
             .logo2 {
                 width: 150px;
             }
 
-           
-            
+
+
             .menu a {
                 display: flex;
                 text-align: right;
-            
+
                 list-style: none;
                 text-decoration: none;
                 color: #009FE3;
                 font-size: 22px;
                 }
-                
+
             .menu li {
                     display: inline-block;
                 }
-                
+
             .menu a:hover,
-            .menu a:focus, 
+            .menu a:focus,
             .menu a:active {
                 font-weight: 700;
                 }
-            }    
+            }
         }
-   
+
  .heropicture {
         object-fit: cover;
         object-position: center;
         height: 100%;
         }
 
-  
+
 /* MAIN */
 
 .hero {
@@ -124,7 +124,7 @@ p {
 	background-color: #E9FAFF;
     padding-bottom: $spacer;
 
-   
+
 
     .onecolumn {
 	text-align: center;
@@ -135,7 +135,7 @@ p {
 
     .headline {
 	display: flex;
-   
+
         h1 {
         margin: auto;
         }
@@ -170,7 +170,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 431px;
-    max-width: 100%; 
+    max-width: 100%;
 }
 }
 @media screen and (min-width: 800px) {
@@ -185,7 +185,7 @@ body {
         padding: $spacer;
         }
 
-    
+
     }
 }
 
@@ -196,10 +196,10 @@ body {
     font-weight: 400;
     text-align: left;
     text-decoration: none;
-    
+
 
     .button a:hover,
-    .button a:focus, 
+    .button a:focus,
     .button a:active {
     font-weight: 700;
 }
@@ -222,7 +222,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
  height: 431px;
-    max-width: 100%; 
+    max-width: 100%;
 
 }
 .levy,
@@ -237,15 +237,15 @@ body {
 @media screen and (min-width: 800px) {
     .povodne {
         display: flex;
-    
+
         .levy {
             flex: 0 0 50%;
             margin: 0 auto;
             padding: $spacer*3;
-    
-    
+
+
         }
-        
+
         .pravy {
             flex: 0 0 50%;
              margin: 0 auto;
@@ -264,7 +264,7 @@ body {
         background-position: center;
         background-repeat: no-repeat;
      height: 431px;
-        width-width: 100%; 
+        width-width: 100%;
     }
 .levy,
 .pravy {
@@ -288,15 +288,15 @@ body {
     .levy {
         flex: 0 0 50%;
         margin: 0 auto;
-        padding: $spacer*3; 
+        padding: $spacer*3;
     }
-    
+
     .pravy {
         flex: 0 0 50%;
          margin: 0 auto;
          padding: $spacer*3;
 
-        } 
+        }
     }
 }
 
@@ -317,7 +317,7 @@ body {
 /* POVODNĚ */
 
 .povodne2013,
-.povodne2002, 
+.povodne2002,
 .pribehy {
     padding: $spacer;
 }
@@ -344,7 +344,7 @@ body {
 @media screen and (min-width: 800px) {
 
     .povodne2013,
-    .povodne2002, 
+    .povodne2002,
     .pribehy {
     padding: $spacer $spacer*3;
 }
@@ -353,16 +353,16 @@ body {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 300px;
         grid-auto-flow: dense;
-     
+
     }
 
     .gallery__item:nth-child(5n+2) {
         grid-column: span 2;
         grid-row: span 2;
         width: 100%;
-        height: 100%;   
+        height: 100%;
     }
-    
+
 }
 
   /* PROTIPOVODŇOVKY PAGE */
@@ -370,7 +370,7 @@ body {
     padding: $spacer;
   }
 
-  @media screen and (min-width: 800px) { 
+  @media screen and (min-width: 800px) {
   .protipovodnova {
     padding: $spacer $spacer*3;
   }
@@ -386,16 +386,16 @@ body {
     }
  }
 
- @media screen and (min-width: 800px) { 
+ @media screen and (min-width: 800px) {
     .kontakt {
         padding: $spacer $spacer*3;
-    
+
         a {
             color: $blue;
         }
      }
     }
-  
+
  /* AKTUALNE */
 
  .clanky {
@@ -407,7 +407,7 @@ body {
     }
 }
 
-@media screen and (min-width: 800px) { 
+@media screen and (min-width: 800px) {
     .clanky {
         padding: $spacer $spacer*3;
     }
@@ -420,7 +420,7 @@ body {
 /* AKTUALNE CLANKY*/
 .article {
     padding: $spacer;
-    
+
     .article__meta {
         color: $blue;
     }
@@ -432,14 +432,14 @@ body {
 }
 
 
-@media screen and (min-width: 800px) { 
+@media screen and (min-width: 800px) {
     .article {
         padding: $spacer*3;
-        
+
         .article__meta {
             color: $blue;
         }
-    
+
         .article__perex {
             font-weight: 500;
             font-size: 20px;
