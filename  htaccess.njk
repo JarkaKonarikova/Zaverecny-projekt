@@ -3,21 +3,12 @@ permalink: .htaccess
 ---
 
 
-# Force HTTPS
+# Force HTTPS and WWW
 RewriteEngine On
-RewriteCond %{SERVER_PORT} !=8080
-RewriteCond %{HTTP_HOST} !=localhost
-RewriteCond %{HTTP_HOST} !=127.0.0.1
-RewriteCond %{REMOTE_ADDR} !=127.0.0.1
-RewriteCond %{REMOTE_ADDR} !=::1
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
-
-# Non-WWW to WWW Redirect
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^vodypokrk.cz
-RewriteRule (.*) https://www.vodypokrk.cz/$1 [R=301,QSA,L]
+RewriteCond %{HTTP_HOST} ^(www\.)?vodypokrk.cz$ [NC]
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.vodypokrk.cz%{REQUEST_URI} [R=301,QSA,L]
 
 
 # 404 Redirect
