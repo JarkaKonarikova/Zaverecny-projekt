@@ -16,9 +16,12 @@ RewriteRule ^ https://www.vodypokrk.cz%{REQUEST_URI} [R=301,QSA,L]
 
 
 # Deny access to the sensitive files
-<FilesMatch "(?i)^(\..*|readme\.(html|txt|md)|license\.txt|changelog\.(txt|md)|xmlrpc\.php|wp-config.*\.php|.*\.(sql|sql\.gz|bak|old|orig|swp|log|ini|sh|key|pem|crt|cer|csr|p12|pfx|jks|ppk|asc|gpg)|id_(rsa|dsa|ecdsa|ed25519)(\.pub)?|composer\.(json|lock)|package(-lock)?\.json)$">
+<FilesMatch "(?i)^(\.(?!well-known$).*|readme\.(html|txt|md)|license\.txt|changelog\.(txt|md)|xmlrpc\.php|wp-config.*\.php|.*\.(sql|sql\.gz|bak|old|orig|swp|log|ini|sh|key|pem|crt|cer|csr|p12|pfx|jks|ppk|asc|gpg)|id_(rsa|dsa|ecdsa|ed25519)(\.pub)?|composer\.(json|lock)|package(-lock)?\.json)$">
 	Require all denied
 </FilesMatch>
+
+# Deny access to hidden directories (.git, .svn, .idea…) except .well-known
+RedirectMatch 403 "(?i)/\.(?!well-known/)[^/]+/"
 
 
 # Set Security Headers
